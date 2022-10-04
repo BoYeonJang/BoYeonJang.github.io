@@ -3,3 +3,4 @@
 
 export const SITE_TITLE = 'Boyeon Jang'
 export const SITE_DESCRIPTION = 'A blog that keeps my study records'
+export const GITHUB_URL = 'https://github.com/BoYeonJang'

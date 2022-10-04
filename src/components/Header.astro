@@ -1,7 +1,7 @@
 ---
 import HeaderLink from './HeaderLink.astro'
 import { IoLogoGithub } from 'react-icons/io5/index.js'
-import { SITE_TITLE } from '../config'
+import { SITE_TITLE, GITHUB_URL } from '../config'
 import FootprintIcon from './icons/footprint'
 import ThemeToggle from './ThemeToggleButton'
 ---
@@ -20,7 +20,7 @@ import ThemeToggle from './ThemeToggleButton'
         <HeaderLink href="/work">Works</HeaderLink>
         <HeaderLink href="/post">Posts</HeaderLink>
         <HeaderLink href="/about">About</HeaderLink>
-        <HeaderLink href="https://github.com/BoYeonJang" target="_blank"
+        <HeaderLink href={GITHUB_URL} target="_blank"
           ><IoLogoGithub />GitHub</HeaderLink
         >
       </div>
