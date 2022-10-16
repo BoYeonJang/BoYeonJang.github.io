@@ -1,7 +1,7 @@
 // Place any global data in this file.
 // You can import this data from anywhere in your site by using the `import` keyword.
 
-export const SITE_TITLE = "Astro Modern Personal Website Template";
+export const SITE_TITLE = "Boyeon Jang's Blog."
 export const SITE_DESCRIPTION =
-  "Astro Modern Personal Website template with Project Section, CV Section, Paginated Blog, RSS Feed, SEO Friendly, Visual themes and Responsive Desing.";
-export const GITHUB_URL = "https://github.com/BoYeonJang";
+  "Boyeon Jang's blog, created by Astro Modern Personal Website template."
+export const GITHUB_URL = 'https://github.com/BoYeonJang'
