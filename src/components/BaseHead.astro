@@ -1,15 +1,15 @@
 ---
 // Import the global.css file here so that it is included on
 // all pages through the use of the <BaseHead /> component.
-import '../styles/global.css';
+import '../styles/global.css'
 
 export interface Props {
-	title: string;
-	description: string;
-	image?: string;
+  title: string
+  description: string
+  image?: string
 }
 
-const { title, description, image = '/social_img.png' } = Astro.props;
+const { title, description, image = '/social_img.png' } = Astro.props
 ---
 
 <!-- Global Metadata -->
@@ -36,3 +36,9 @@ const { title, description, image = '/social_img.png' } = Astro.props;
 <meta property="twitter:title" content={title} />
 <meta property="twitter:description" content={description} />
 <meta property="twitter:image" content={new URL(image, Astro.url)} />
+
+<!-- Google Search Console HTML tag -->
+<meta
+  name="google-site-verification"
+  content="NDNcJMUL9tl711oRxZrZoCsc2rMbzn-8cs8o_MPnZKo"
+/>
