@@ -3,7 +3,7 @@ layout: '../../layouts/PostLayout.astro'
 title: 'Vue.js의 multi-word 오류'
 description: 'error Component name "Generation" should always be multi-word. vue/multi-word-component-names'
 pubDate: 'Oct 17 2022'
-heroImage: '/public/Vue.js의-multi-word-오류/eslint-plugin-vue.png'
+heroImage: '/Vue.js의-multi-word-오류/eslint-plugin-vue.png'
 ---
 
 ![](/src/images/%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7%202022-09-29%20%EC%98%A4%EC%A0%84%2011.06.47.png)
