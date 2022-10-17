@@ -1,17 +1,73 @@
 ---
-layout: "../../layouts/PostLayout.astro"
-title: "Demo Post 1"
-description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-pubDate: "Sep 10 2022"
-heroImage: "/post_img.webp"
+layout: '../../layouts/PostLayout.astro'
+title: 'Vue.js의 multi-word 오류'
+description: 'error Component name "Generation" should always be multi-word. vue/multi-word-component-names'
+pubDate: 'Oct 17 2022'
+heroImage: '/post1/스크린샷 2022-09-29 오전 11.06.47.png'
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vitae ultricies leo integer malesuada nunc vel risus commodo viverra. Adipiscing enim eu turpis egestas pretium. Euismod elementum nisi quis eleifend quam adipiscing. In hac habitasse platea dictumst vestibulum. Sagittis purus sit amet volutpat. Netus et malesuada fames ac turpis egestas. Eget magna fermentum iaculis eu non diam phasellus vestibulum lorem. Varius sit amet mattis vulputate enim. Habitasse platea dictumst quisque sagittis. Integer quis auctor elit sed vulputate mi. Dictumst quisque sagittis purus sit amet.
+![](../../../public/post1/%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7%202022-09-29%20%EC%98%A4%EC%A0%84%2011.06.47.png)
 
-Morbi tristique senectus et netus. Id semper risus in hendrerit gravida rutrum quisque non tellus. Habitasse platea dictumst quisque sagittis purus sit amet. Tellus molestie nunc non blandit massa. Cursus vitae congue mauris rhoncus. Accumsan tortor posuere ac ut. Fringilla urna porttitor rhoncus dolor. Elit ullamcorper dignissim cras tincidunt lobortis. In cursus turpis massa tincidunt dui ut ornare lectus. Integer feugiat scelerisque varius morbi enim nunc. Bibendum neque egestas congue quisque egestas diam. Cras ornare arcu dui vivamus arcu felis bibendum. Dignissim suspendisse in est ante in nibh mauris. Sed tempus urna et pharetra pharetra massa massa ultricies mi.
+Vue.js로 화면 개발을 할 때, 아래와 같은 오류가 나올 때가 있다.
 
-Mollis nunc sed id semper risus in. Convallis a cras semper auctor neque. Diam sit amet nisl suscipit. Lacus viverra vitae congue eu consequat ac felis donec. Egestas integer eget aliquet nibh praesent tristique magna sit amet. Eget magna fermentum iaculis eu non diam. In vitae turpis massa sed elementum. Tristique et egestas quis ipsum suspendisse ultrices. Eget lorem dolor sed viverra ipsum. Vel turpis nunc eget lorem dolor sed viverra. Posuere ac ut consequat semper viverra nam. Laoreet suspendisse interdum consectetur libero id faucibus. Diam phasellus vestibulum lorem sed risus ultricies tristique. Rhoncus dolor purus non enim praesent elementum facilisis. Ultrices tincidunt arcu non sodales neque. Tempus egestas sed sed risus pretium quam vulputate. Viverra suspendisse potenti nullam ac tortor vitae purus faucibus ornare. Fringilla urna porttitor rhoncus dolor purus non. Amet dictum sit amet justo donec enim.
+```zsh
+error Component name 'Generation' should always be multi-word
+vue/multi-word-component-names
+```
 
-Mattis ullamcorper velit sed ullamcorper morbi tincidunt. Tortor posuere ac ut consequat semper viverra. Tellus mauris a diam maecenas sed enim ut sem viverra. Venenatis urna cursus eget nunc scelerisque viverra mauris in. Arcu ac tortor dignissim convallis aenean et tortor at. Curabitur gravida arcu ac tortor dignissim convallis aenean et tortor. Egestas tellus rutrum tellus pellentesque eu. Fusce ut placerat orci nulla pellentesque dignissim enim sit amet. Ut enim blandit volutpat maecenas volutpat blandit aliquam etiam. Id donec ultrices tincidunt arcu. Id cursus metus aliquam eleifend mi.
+`eslint-plugin-vue`를 사용하기 때문에 발생한 오류다. 오류 내용을 보면 Component의 이름은 항상 여러 단어여야 한다고 한다.
 
-Tempus quam pellentesque nec nam aliquam sem. Risus at ultrices mi tempus imperdiet. Id porta nibh venenatis cras sed felis eget velit. Ipsum a arcu cursus vitae. Facilisis magna etiam tempor orci eu lobortis elementum. Tincidunt dui ut ornare lectus sit. Quisque non tellus orci ac. Blandit libero volutpat sed cras. Nec tincidunt praesent semper feugiat nibh sed pulvinar proin gravida. Egestas integer eget aliquet nibh praesent tristique magna.
+[vue/multi-word-component-names](https://eslint.vuejs.org/rules/multi-word-component-names.html)여기서 규칙 내용을 보면 `App.vue`와 같이 Vue에서 제공하는 내장 구성 요소를 제외하고는 구성 요소의 이름이 항상 여러 단어여야 하고, 이는 모든 HTML 요소가 한 단어이기 때문에 기존 및 미래 HTML 요소와의 충돌을 방지하기 때문이다.
+
+![](../../../public/post1/%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7%202022-09-29%20%EC%98%A4%EC%A0%84%2011.07.46.png)
+
+![](../../../public/post1/%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7%202022-09-29%20%EC%98%A4%EC%A0%84%2011.07.53.png)
+
+![](../../../public/post1/%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7%202022-09-29%20%EC%98%A4%EC%A0%84%2011.07.18.png)
+
+`Generation`을 `SentenceGeneration` 으로 Component의 이름을 여러 단어 조합으로 바뀌주니 오류가 사라졌다.
+
+규칙 세부 정보를 살짝보자면,
+
+```zsh
+/* ✓ GOOD */
+Vue.component('todo-item', { // ... })
+
+/* ✗ BAD */
+Vue.component('Todo', { // ... })
+```
+
+```zsh
+/* ✓ GOOD */
+export default {
+  name: 'TodoItem',
+  // ...
+}
+
+/* ✗ BAD */
+export default {
+  name: 'Todo',
+  // ...
+}
+```
+
+물론 Component의 이름을 한 단어로만 하고 싶다면 아래 코드로 한 단어로 허용할 Component의 이름을 적어주면 된다.
+
+```json
+{
+  "vue/multi-word-component-names": [
+    "error",
+    {
+      "ignores": []
+    }
+  ]
+}
+```
+
+허용할 Component의 이름을 적어주는게 귀찮고 전부 한 단어로 하고 싶다면, 완전히 꺼버리면 되는데 추천하지는 않는다.
+
+```json
+{
+  "vue/multi-word-component-names": 0
+}
+```
