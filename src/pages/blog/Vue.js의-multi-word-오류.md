@@ -3,7 +3,7 @@ layout: '../../layouts/PostLayout.astro'
 title: 'Vue.js의 multi-word 오류'
 description: 'error Component name "Generation" should always be multi-word. vue/multi-word-component-names'
 pubDate: 'Oct 17 2022'
-heroImage: 'https://imgur.com/XKEGKyD'
+heroImage: 'https://i.imgur.com/XKEGKyD.png'
 ---
 
 ![Imgur](https://i.imgur.com/QLqZh7D.png)
