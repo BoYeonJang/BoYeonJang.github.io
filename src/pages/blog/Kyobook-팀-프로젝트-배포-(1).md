@@ -1,9 +1,9 @@
 ---
 layout: '../../layouts/PostLayout.astro'
 title: 'Kyobook 팀 프로젝트 배포 (1/4)'
-description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
+description: 'KAIT에서 주최한 2022년 제1기 ICT 경력전환 AI 교육(AI서비스 개발 과정)에서 2022년 07월 25일 ~ 10월 14일(약 3개월) 동안 교육을 받았다. 이 과정에서 진행된 팀 프로젝트를 단순 개발에서 끝내지 않고 배포까지하는 과정을 블로그에 남긴다.'
 pubDate: 'Oct 18 2022'
-heroImage: '/post_img.webp'
+heroImage: 'https://i.imgur.com/Q9U36kp.png'
 ---
 
 [Kyobook 팀 프로젝트 배포 (1/4)](</blog/Kyobook-팀-프로젝트-배포-(1)>)
@@ -72,5 +72,7 @@ heroImage: '/post_img.webp'
 똑같이 수집되어 전처리를 통해 가공한 리뷰 데이터를 `KoGPT2` 모델로 학습하여 해당 책에 대한 한줄평을 보여준다.
 
 ![Imgur](https://i.imgur.com/ANJj7YN.png)
+
+Front-end의 경우 [Netlify](https://www.netlify.com/)에서 배포하기로 하였고, Back-end의 경우 [EC2](https://aws.amazon.com/ko/ec2/?trk=68913a17-4967-41f6-a766-0f2eb338dd04&sc_channel=ps&s_kwcid=AL!4422!3!588924203019!e!!g!!aws%20ec2&ef_id=Cj0KCQjw48OaBhDWARIsAMd966D_mSXxwm-uCxQ2BXBPeJGJOt2xAWGyDdvjUo35JM8ZMvbpFFlVS44aAmbXEALw_wcB:G:s&s_kwcid=AL!4422!3!588924203019!e!!g!!aws%20ec2)으로 배포하기로 하였다.
 
 이를 배포하는 과정은 다음 포스트에서 진행하겠다. [Kyobook 팀 프로젝트 배포 (2/4)](</blog/Kyobook-팀-프로젝트-배포-(2)>)
