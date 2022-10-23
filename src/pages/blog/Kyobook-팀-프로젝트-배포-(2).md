@@ -2,7 +2,7 @@
 layout: '../../layouts/PostLayout.astro'
 title: 'Kyobook 팀 프로젝트 배포 (2/4)'
 description: 'KAIT에서 주최한 2022년 제1기 ICT 경력전환 AI 교육(AI서비스 개발 과정)에서 2022년 07월 25일 ~ 10월 14일(약 3개월) 동안 교육을 받았다. 이 과정에서 진행된 팀 프로젝트를 단순 개발에서 끝내지 않고 배포까지하는 과정을 블로그에 남긴다.'
-pubDate: 'Oct 18 2022'
+pubDate: 'Oct 21 2022'
 heroImage: 'https://i.imgur.com/Q9U36kp.png'
 ---
 
@@ -98,5 +98,12 @@ https://neon-pony-14a28c.netlify.app
 
 ![Imgur](https://i.imgur.com/rbtam68.png)
 `레코드 생성`을 눌러 완료하고 `Netlify`으로 돌아와보면 사이트 주소가 우리의 도메인으로 바뀌어서 정상적으로 접속이 된다.
+
+![Imgur](https://i.imgur.com/d6w6Gig.png)
+인증서가 발급되어 사이트에 HTTPS가 활성화 된 것을 볼 수 있다.
+
+## 배포 완료
+
+front-end을 `Netlify`을 통해 배포 성공적으로 배포하였다. 프로젝트를 수정하여 본인 `GitHub`에 푸쉬한다면 `Netlify`에서 설정을 한 것대로 자동으로 빌드하여 배포한다. 이 후 자동 배포까지는 최대 5분 정도가 소요된다.
 
 back-end을 배포하는 과정은 다음 포스트에서 진행하겠다. [Kyobook 팀 프로젝트 배포 (3/4)](</blog/Kyobook-팀-프로젝트-배포-(3)>)
