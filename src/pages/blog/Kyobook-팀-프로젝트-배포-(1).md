@@ -6,13 +6,19 @@ pubDate: 'Oct 18 2022'
 heroImage: 'https://i.imgur.com/Q9U36kp.png'
 ---
 
-[Kyobook 팀 프로젝트 배포 (1/4)](</blog/Kyobook-팀-프로젝트-배포-(1)>)
-
-[Kyobook 팀 프로젝트 배포 (2/4)](</blog/Kyobook-팀-프로젝트-배포-(2)>)
-
-[Kyobook 팀 프로젝트 배포 (3/4)](</blog/Kyobook-팀-프로젝트-배포-(3)>)
-
-[Kyobook 팀 프로젝트 배포 (4/4)](</blog/Kyobook-팀-프로젝트-배포-(4)>)
+<div tabindex="0" class="collapse collapse-arrow border border-base-300 bg-base-100 rounded-box">
+  <input type="checkbox" /> 
+  <div class="collapse-title text-xl font-medium">
+    Kyobook 팀 프로젝트 배포
+  </div>
+  <div class="collapse-content"> 
+    1. <a href="/blog/Kyobook-팀-프로젝트-배포-(1)" class="link-primary link-hover">Kyobook 팀 프로젝트 배포 (1/4)</a><br>
+    2. <a href="/blog/Kyobook-팀-프로젝트-배포-(2)" class="link-hover">Kyobook 팀 프로젝트 배포 (2/4)</a><br>
+    3. <a href="/blog/Kyobook-팀-프로젝트-배포-(3)" class="link-hover">Kyobook 팀 프로젝트 배포 (3/4)</a><br>
+    4. <a href="/blog/Kyobook-팀-프로젝트-배포-(4)" class="link-hover">Kyobook 팀 프로젝트 배포 (4/4)</a>
+  </div>
+</div>
+<br>
 
 ## 프로젝트 설명
 
