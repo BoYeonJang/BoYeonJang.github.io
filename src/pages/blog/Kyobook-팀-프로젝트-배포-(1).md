@@ -79,6 +79,6 @@ heroImage: 'https://i.imgur.com/Q9U36kp.png'
 
 ![Imgur](https://i.imgur.com/ANJj7YN.png)
 
-Front-end의 경우 [Netlify](https://www.netlify.com/)에서 배포하기로 하였고, Back-end의 경우 [EC2](https://aws.amazon.com/ko/ec2/?trk=68913a17-4967-41f6-a766-0f2eb338dd04&sc_channel=ps&s_kwcid=AL!4422!3!588924203019!e!!g!!aws%20ec2&ef_id=Cj0KCQjw48OaBhDWARIsAMd966D_mSXxwm-uCxQ2BXBPeJGJOt2xAWGyDdvjUo35JM8ZMvbpFFlVS44aAmbXEALw_wcB:G:s&s_kwcid=AL!4422!3!588924203019!e!!g!!aws%20ec2)으로 배포하기로 하였다.
+Front-end의 경우 [Vercel](https://vercel.com/)에서 배포하기로 하였고, Back-end의 경우 [AWS Elastic Beanstalk](https://aws.amazon.com/ko/elasticbeanstalk/)으로 배포하기로 하였다.
 
 이를 배포하는 과정은 다음 포스트에서 진행하겠다. [Kyobook 팀 프로젝트 배포 (2/4)](</blog/Kyobook-팀-프로젝트-배포-(2)>)
